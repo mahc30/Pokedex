@@ -1,91 +1,110 @@
-body{
+body {
     margin: 0;
     padding: 0;
     background-color: blue;
 }
 
-#test{
+#test {
     display: flex;
     align-items: center;
     height: 100vh;
 }
 
-#viewport{
+#viewport {
     width: 90%;
-    height: 90vh;
-   
+    height: 95vh;
     border-radius: 2%;
     background-color: blueviolet;
     overflow: hidden;
 }
 
-header{
+header {
     height: 10%;
     background-color: black;
     opacity: 0.7;
 }
 
-main{
+main {
     height: 60%;
 }
 
 footer {
     height: 30%;
     background-color: white;
-}
-
-#buttons-container{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 2%;
-    margin-left: 2%;
 }
 
-.grid{
+#buttons-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2% 0 2%;
+}
+
+#title-others {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.grid {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 5%;
-    margin: -10px 0 0 0;
+    gap: 8px;
 }
 
-.grid>*{
-    flex: 2 1 96px;
-}
-
-.cell{
+.cell {
     display: flex;
     justify-content: center;
     align-content: center;
-    margin-top: 10px;
 }
 
-#title-others{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    min-width: 288px;
+.cell:nth-child(1) {
+    width: 100%;
 }
 
-.span-2{
-    flex-grow: 2;
+@media screen and (min-width: 700px) {
+    .cell:nth-child(1) {
+        flex: 1;
+        width: 144px;
+    }
+    #buttons-container {
+        width: 75%;
+    }
 }
 
-button{
-    min-width: 96px;
+@media screen and (min-width: 1021px) {
+    .cell:nth-child(1) {
+        flex: 1;
+        width: 256px;
+    }
+    #buttons-container {
+        width: 60%;
+    }
+}
+
+.cell:not(:first-child) {
+    flex: 1;
+}
+
+button {
+    min-width: 92px;
     max-width: 144px;
-    min-height: 96px;
+    min-height: 92px;
     max-height: 144px;
     background-color: #1E1E1E;
 }
 
-button:hover{
+button:hover {
     background-color: blue;
     cursor: pointer;
 }
 
-.center{
+.center {
     margin-left: auto;
     margin-right: auto;
 }

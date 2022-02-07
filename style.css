@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: blue;
+}
+
+#test{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+#viewport{
+    width: 90%;
+    height: 90vh;
+   
+    border-radius: 2%;
+    background-color: blueviolet;
+    overflow: hidden;
+}
+
+header{
+    height: 10%;
+    background-color: black;
+    opacity: 0.7;
+}
+
+main{
+    height: 60%;
+}
+
+footer {
+    height: 30%;
+    background-color: white;
+}
+
+#buttons-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.grid{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+    margin: -10px 0 0 0;
+}
+
+.grid>*{
+    flex: 2 1 96px;
+}
+
+.cell{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10px;
+}
+
+#title-others{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-width: 288px;
+}
+
+.span-2{
+    flex-grow: 2;
+}
+
+button{
+    min-width: 96px;
+    max-width: 144px;
+    min-height: 96px;
+    max-height: 144px;
+    background-color: #1E1E1E;
+}
+
+button:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}

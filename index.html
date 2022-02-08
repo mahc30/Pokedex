@@ -12,13 +12,15 @@
 <body>
 
     <div id="viewport" class="center">
-        <header class="vertical-center horizontal-center">
-            <img src="./images/pokecenter.png" alt="" srcset="">
-            <h1> Pokédex_</h1>
+        <header>
+            <div id="header-wrapper" class="flex horizontal-center vertical-center">
+                <img src="./images/pokecenter.png" alt="" srcset="">
+                <h1> Pokédex_</h1>
+            </div>
         </header>
 
         <main class="bg-gray">
-            <div class="container flex-column">
+            <div id="main-wrapper" class="flex vertical-center horizontal-center flex-column">
                 <div id="pokemon-title" class="bg-white vertical-center horizontal-center w-75">
                     <img src="./images/fire_icon.png" alt="" srcset="">
                     <h2> Charizard</h1>
@@ -81,18 +83,20 @@
             </div>
         </main>
 
-        <footer class="bg-white flex horizontal-center vertical-center">
-            <div id="others-container" class="container grid w-75 h-75">
-                <div class="cell flex horizontal-center vertical-center">
-                    <h2>
-                        Others
-                    </h2>
-                </div>
+        <footer class="bg-white">
+            <div id="footer-wrapper" class="flex horizontal-center">
+                <div id="others-container" class="container grid w-75 h-75">
+                    <div class="cell flex horizontal-center vertical-center">
+                        <h3>
+                            Others
+                        </h3>
+                    </div>
 
-                <div class="cell flex horizontal-center vertical-center"><button class="bg-flygon"></button></div>
-                <div class="cell flex horizontal-center vertical-center"><button class="bg-butterfree"></button></div>
-                <div class="cell flex horizontal-center vertical-center"><button class="bg-gallade"></button></div>
-                <div class="cell flex horizontal-center vertical-center"><button class="bg-bisharp"></button></div>
+                    <div class="cell flex horizontal-center vertical-center"><button class="bg-flygon"></button></div>
+                    <div class="cell flex horizontal-center vertical-center"><button class="bg-butterfree"></button></div>
+                    <div class="cell flex horizontal-center vertical-center"><button class="bg-gallade"></button></div>
+                    <div class="cell flex horizontal-center vertical-center"><button class="bg-bisharp"></button></div>
+                </div>
             </div>
         </footer>
 

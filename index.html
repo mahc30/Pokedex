@@ -11,35 +11,91 @@
 
 <body>
 
-    <div id="test">
-        <div id="viewport" class="center">
-            <header>
+    <div id="viewport" class="center">
+        <header class="vertical-center horizontal-center">
+            <img src="./images/pokecenter.png" alt="" srcset="">
+            <h1> Pokédex_</h1>
+        </header>
 
-            </header>
-
-            <main>
-
-            </main>
-
-            <footer class="info-card">
-                <div id="buttons-container">
-                    <div class="grid center">
-                        <div class="cell">
-                            <h2 id="title-others">
-                                Others
-                            </h2>
-                        </div>
-
-                        <div class="cell"><button></button></div>
-                        <div class="cell"><button></button></div>
-                        <div class="cell"><button></button></div>
-                        <div class="cell"><button></button></div>
-                    </div>
+        <main class="bg-gray">
+            <div class="container flex-column">
+                <div id="pokemon-title" class="bg-white vertical-center horizontal-center w-75">
+                    <img src="./images/fire_icon.png" alt="" srcset="">
+                    <h2> Charizard</h1>
                 </div>
 
-            </footer>
+                <div id="pokemon-image-container" class="flex vertical-center horizontal-center">
+                    <img id="current-pokemon-image" src="./images/charizard.png" alt="" srcset="">
+                </div>
 
-        </div>
+                <div id="stats-board" class="container grid bg-white">
+                    <div class="stat-info flex vertical-center horizontal-center">
+                        <div class="w-50 flex vertical-center horizontal-center">
+                            <h3>NO.</h3>
+                        </div>
+                        <div class="w-50 flex vertical-center horizontal-center">
+                            <strong>006</strong>
+                        </div>
+                    </div>
+                    <div class="stat-info flex vertical-center horizontal-center">
+                        <div class="w-50 flex vertical-center horizontal-center">
+                            <h3>LEVEL</h3>
+                        </div>
+                        <div class="w-50 flex vertical-center horizontal-center">
+                            <strong>100</strong>
+                        </div>
+                    </div>
+                    <div class="stat-info flex vertical-center horizontal-center">
+                        <div class="w-50 flex vertical-center horizontal-center">
+                            <h3>TYPE</h3>
+                        </div>
+                        <div class="w-50 flex vertical-center horizontal-center">
+                            <strong>FIRE</strong>
+                        </div>
+                    </div>
+                    <div class="stat-info flex vertical-center horizontal-center">
+                        <div class="w-50 flex vertical-center horizontal-center">
+                            <h3>HABILITY</h3>
+                        </div>
+                        <div class="w-50 flex vertical-center horizontal-center">
+                            <strong>FLAMES</strong>
+                        </div>
+                    </div>
+                    <div class="stat-info flex vertical-center horizontal-center">
+                        <div class="w-50 flex vertical-center horizontal-center">
+                            <h3>HEIGHT</h3>
+                        </div>
+                        <div class="w-50 flex vertical-center horizontal-center">
+                            <strong>1.7 M</strong>
+                        </div>
+                    </div>
+                    <div class="stat-info flex vertical-center horizontal-center">
+                        <div class="w-50 flex vertical-center horizontal-center">
+                            <h3>WEIGHT</h3>
+                        </div>
+                        <div class="w-50 flex vertical-center horizontal-center">
+                            <strong>90.5 KG</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="bg-white flex horizontal-center vertical-center">
+            <div id="others-container" class="container grid w-75 h-75">
+                <div class="cell flex horizontal-center vertical-center">
+                    <h2>
+                        Others
+                    </h2>
+                </div>
+
+                <div class="cell flex horizontal-center vertical-center"><button class="bg-flygon"></button></div>
+                <div class="cell flex horizontal-center vertical-center"><button class="bg-butterfree"></button></div>
+                <div class="cell flex horizontal-center vertical-center"><button class="bg-gallade"></button></div>
+                <div class="cell flex horizontal-center vertical-center"><button class="bg-bisharp"></button></div>
+            </div>
+        </footer>
+
     </div>
 
 </body>

@@ -1,53 +1,44 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: blue;
-}
-
-#test {
-    display: flex;
-    align-items: center;
-    height: 100vh;
+    background-color: rgb(114, 114, 114);
 }
 
 #viewport {
     width: 90%;
-    height: 95vh;
-    border-radius: 2%;
-    background-color: blueviolet;
+    height: 94vh;
+    border: 2px solid black;
+    border-radius: 30px;
     overflow: hidden;
+    margin: 3vh auto 3vh auto;
 }
 
 header {
-    height: 10%;
+    height: 5%;
     background-color: black;
-    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 main {
     height: 60%;
+    max-height: 65%;
+    padding: 10% 4% 10% 4%;
 }
 
 footer {
+    width: 100%;
     height: 30%;
-    background-color: white;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 0 0 5% 0;
 }
 
-#buttons-container {
+.container {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 2% 0 2%;
-}
-
-#title-others {
-    display: flex;
-    justify-content: center;
-    align-content: center;
 }
 
 .grid {
@@ -57,23 +48,36 @@ footer {
     gap: 8px;
 }
 
-.cell {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
 .cell:nth-child(1) {
     width: 100%;
+    max-height: 5%;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 500px) {
+    #buttons-container {
+        width: 75%;
+    }
+    main {
+        padding: 5% 0 5% 0;
+    }
+    footer {
+        height: 25%;
+    }
+}
+
+@media screen and (min-width: 730px) {
     .cell:nth-child(1) {
         flex: 1;
         width: 144px;
     }
     #buttons-container {
         width: 75%;
+    }
+    main {
+        padding: 5% 0 5% 0;
+    }
+    footer {
+        height: 25%;
     }
 }
 
@@ -92,19 +96,136 @@ footer {
 }
 
 button {
-    min-width: 92px;
+    min-width: 72px;
     max-width: 144px;
-    min-height: 92px;
+    min-height: 72px;
     max-height: 144px;
-    background-color: #1E1E1E;
+    height: 100%;
+    background-color: rgb(85, 85, 89);
+    border-radius: 10%;
 }
 
 button:hover {
-    background-color: blue;
+    background-color: rgb(239, 28, 31);
     cursor: pointer;
 }
 
 .center {
     margin-left: auto;
     margin-right: auto;
+}
+
+.bg-charizard {
+    background-image: url("./images/charizard.png");
+    background-size: cover;
+}
+
+.bg-bisharp {
+    background-image: url("./images/bisharp.png");
+    background-size: cover;
+}
+
+.bg-flygon {
+    background-image: url("./images/flygon.png");
+    background-size: cover;
+}
+
+.bg-gallade {
+    background-image: url("./images/gallade.png");
+    background-size: cover;
+}
+
+.bg-butterfree {
+    background-image: url("./images/butterfree.png");
+    background-size: cover;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-gray {
+    background-color: rgb(196, 195, 195);
+}
+
+h1 {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    color: white;
+}
+
+h2,
+p,
+strong {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    color: rgb(85, 85, 89);
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 3% 0 0;
+}
+
+#pokemon-title {
+    height: 8%;
+    border-radius: 30px;
+    max-width: 320px;
+    display: flex;
+}
+
+#pokemon-image-container {
+    width: 100%;
+    height: 35%;
+    min-height: 35%;
+}
+
+#current-pokemon-image {
+    position: relative;
+    top: 11%;
+    height: 100%;
+}
+
+#stats-board {
+    height: 65%;
+    max-height: 60%;
+    border-radius: 10%;
+    margin: 0 0 5% 0;
+}
+
+.stat-info {
+    width: 100%;
+    max-height: 5%;
+    margin: 0 10% 0 10%;
+}
+
+.flex {
+    display: flex;
+}
+
+.vertical-center {
+    align-items: center;
+}
+
+.horizontal-center {
+    justify-content: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.inline {
+    display: inline-flex;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.h-75 {
+    height: 75%;
 }

@@ -26,6 +26,12 @@ header {
     width: 100%;
 }
 
+#header-wrapper>img {
+    max-width: 60%;
+    max-height: 60%;
+    margin: 0 3% 0 0;
+}
+
 main {
     min-height: 64%;
     height: 64%;
@@ -34,6 +40,48 @@ main {
 #main-wrapper {
     padding: 5% 4% 5% 4%;
     height: 100%;
+    flex-direction: column;
+}
+
+#pokemon-title>img {
+    max-width: 80%;
+    max-height: 80%;
+    margin: 0 3% 0 0;
+}
+
+#main-pokemon {
+    height: 45%;
+}
+
+#pokemon-title {
+    height: 10%;
+    border-radius: 30px;
+    max-width: 320px;
+    display: flex;
+}
+
+#pokemon-image-container {
+    width: 100%;
+    height: 90%;
+}
+
+#current-pokemon-image {
+    height: 125%;
+    width: 100%;
+    z-index: 100;
+}
+
+#stats-board {
+    height: 45%;
+    max-height: 60%;
+    border-radius: 10%;
+    margin: 0 0 5% 0;
+}
+
+.stat-info {
+    width: 100%;
+    max-height: 5%;
+    margin: 0 10% 0 10%;
 }
 
 footer {
@@ -67,15 +115,16 @@ footer {
     max-height: 15%;
 }
 
+.cell:not(:first-child) {
+    flex: 1;
+}
+
 @media screen and (min-width: 500px) {
     #buttons-container {
         width: 75%;
     }
     #main-wrapper {
         padding: 4%;
-    }
-    footer {
-        height: 25%;
     }
 }
 
@@ -89,6 +138,17 @@ footer {
     }
     #main-wrapper {
         padding: 3%;
+        flex-direction: row;
+    }
+    #current-pokemon-image {
+        height: 90%;
+    }
+    #main-pokemon {
+        min-height: 100%;
+    }
+    #stats-board {
+        min-height: 90%;
+        max-width: 40%;
     }
 }
 
@@ -105,15 +165,12 @@ footer {
     }
 }
 
-.cell:not(:first-child) {
-    flex: 1;
-}
-
 button {
     min-width: 92px;
     max-width: 256px;
     min-height: 92px;
     max-height: 256px;
+    height: 100%;
     background-color: rgb(85, 85, 89);
     border-radius: 10%;
 }
@@ -174,49 +231,6 @@ strong {
     color: rgb(85, 85, 89);
 }
 
-#header-wrapper>img {
-    max-width: 60%;
-    max-height: 60%;
-    margin: 0 3% 0 0;
-}
-
-img {
-    max-width: 80%;
-    max-height: 80%;
-    margin: 0 3% 0 0;
-}
-
-#pokemon-title {
-    height: 5%;
-    border-radius: 30px;
-    max-width: 320px;
-    display: flex;
-}
-
-#pokemon-image-container {
-    width: 100%;
-    height: 35%;
-}
-
-#current-pokemon-image {
-    position: relative;
-    top: 11%;
-    height: 100%;
-}
-
-#stats-board {
-    height: 50%;
-    max-height: 60%;
-    border-radius: 10%;
-    margin: 0 0 5% 0;
-}
-
-.stat-info {
-    width: 100%;
-    max-height: 5%;
-    margin: 0 10% 0 10%;
-}
-
 .flex {
     display: flex;
 }
@@ -247,4 +261,8 @@ img {
 
 .h-75 {
     height: 75%;
+}
+
+.mx-auto {
+    margin: 0 auto 0 auto;
 }

@@ -76,6 +76,7 @@ main {
     max-height: 60%;
     border-radius: 10%;
     margin: 0 0 5% 0;
+    flex-direction: row;
 }
 
 .stat-info {
@@ -128,7 +129,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 730px) {
+@media screen and (min-width: 830px) {
     .cell:nth-child(1) {
         flex: 1;
         width: 144px;
@@ -149,6 +150,12 @@ footer {
     #stats-board {
         min-height: 90%;
         max-width: 40%;
+        flex-wrap: wrap;
+        margin-left: 10%;
+    }
+    .stat-info {
+        flex: 1;
+        flex-direction: column;
     }
 }
 
@@ -162,6 +169,15 @@ footer {
     }
     #buttons-container {
         width: 60%;
+    }
+    #stats-board {
+        min-height: 90%;
+        max-width: 40%;
+        flex-wrap: wrap;
+    }
+    .stat-info {
+        width: 20%;
+        min-width: 20%;
     }
 }
 

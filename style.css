@@ -1,14 +1,11 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(114, 114, 114);
 }
 
 #viewport {
     width: 90vw;
     height: 94vh;
-    border: 2px solid black;
-    border-radius: 30px;
     overflow: hidden;
     margin: 3vh auto 3vh auto;
 }
@@ -55,7 +52,6 @@ main {
 
 #pokemon-title {
     height: 10%;
-    border-radius: 30px;
     max-width: 320px;
     display: flex;
 }
@@ -66,7 +62,7 @@ main {
 }
 
 #current-pokemon-image {
-    height: 125%;
+    height: 120%;
     width: 100%;
     z-index: 100;
 }
@@ -74,7 +70,6 @@ main {
 #stats-board {
     height: 45%;
     max-height: 60%;
-    border-radius: 10%;
     margin: 0 0 5% 0;
     flex-direction: row;
 }
@@ -105,7 +100,6 @@ footer {
 }
 
 .grid {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -137,6 +131,13 @@ footer {
     #buttons-container {
         width: 75%;
     }
+    main {
+        height: 74%;
+    }
+    footer {
+        height: 20%;
+        min-height: 20%;
+    }
     #main-wrapper {
         padding: 3%;
         flex-direction: row;
@@ -167,6 +168,10 @@ footer {
     #main-wrapper {
         padding: 2%;
     }
+    #footer-wrapper {
+        padding: 0;
+        align-items: center;
+    }
     #buttons-container {
         width: 60%;
     }
@@ -187,7 +192,6 @@ button {
     min-height: 92px;
     max-height: 256px;
     height: 100%;
-    background-color: rgb(85, 85, 89);
     border-radius: 10%;
 }
 
@@ -282,3 +286,25 @@ strong {
 .mx-auto {
     margin: 0 auto 0 auto;
 }
+
+.border-top {
+    border-top: 2px solid black;
+}
+
+.border {
+    border: 2px;
+}
+
+.border-solid {
+    border-style: solid;
+}
+
+.border-black {
+    border-color: black;
+}
+
+.border-radius {
+    border-radius: 30px;
+}
+
+.py-5 {}

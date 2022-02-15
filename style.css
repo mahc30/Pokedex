@@ -42,17 +42,18 @@ main {
     flex-direction: column;
 }
 
+#main-pokemon {
+    height: 45%;
+}
+
 #pokemon-title>img {
     max-width: 80%;
     max-height: 80%;
     margin: 0 3% 0 0;
 }
 
-#main-pokemon {
-    height: 45%;
-}
-
 #pokemon-title {
+    padding: 1%;
     height: 10%;
     max-width: 320px;
     display: flex;

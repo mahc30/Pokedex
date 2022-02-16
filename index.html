@@ -10,94 +10,90 @@
 </head>
 
 <body class="bg-gray">
-    <div id="viewport" class="center border border-solid border-black border-radius">
-        <header>
-            <div id="header-wrapper" class="flex horizontal-center vertical-center">
+    <div id="viewport" class="border border-solid border-black border-radius">
+        <header class="flex horizontal-center vertical-center p-1">
+            <figure class="flex horizontal-center vertical-center">
                 <img src="./images/pokecenter.png" alt="" srcset="">
-                <h1> Pokédex_</h1>
-            </div>
+                <h1> Pokédex~</h1>
+            </figure>
         </header>
 
-        <main class="bg-white">
-            <div id="main-wrapper" class="flex vertical-center horizontal-center">
-                <section id="main-pokemon">
-                    <div id="pokemon-title" class="bg-white flex vertical-center horizontal-center w-75 mx-auto border border-solid border-black border-radius">
-                        <img src="./images/fire_icon.png" alt="" srcset="">
-                        <h2> Charizard</h1>
-                    </div>
+        <main class="bg-white flex vertical-center horizontal-center">
+            <section>
+                <figure class="flex vertical-center horizontal-center h-15 w-50 p-1 mx-auto border border-solid border-black border-radius">
+                    <img src="./images/fire_icon.png" alt="" srcset="">
+                    <h3> Charizard</h3>
+                </figure>
 
-                    <div id="pokemon-image-container" class="flex horizontal-center">
-                        <img id="current-pokemon-image" src="./images/charizard.png" alt="" srcset="">
-                    </div>
-                </section>
+                <figure class="flex horizontal-center">
+                    <img src="./images/charizard.png" class="z-100" alt="" srcset="">
+                </figure>
+            </section>
 
-                <section id="stats-board" class="flex vertical-center horizontal-center grid bg-white border border-solid border-black border-radius">
-                    <div class="stat-info flex vertical-center horizontal-center">
-                        <div class="w-50 flex vertical-center horizontal-center">
-                            <strong>NO.</strong>
-                        </div>
-                        <div class="w-50 flex vertical-center horizontal-center">
-                            <h3>006</h3>
-                        </div>
+            <section class="vertical-center horizontal-center flex-grid border border-solid border-black border-radius w50">
+                <article class="stat-info flex vertical-center horizontal-center">
+                    <div class="w-50 flex vertical-center horizontal-center">
+                        <strong>NO.</strong>
                     </div>
-                    <div class="stat-info flex vertical-center horizontal-center">
-                        <div class="w-50 flex vertical-center horizontal-center">
-                            <strong>LEVEL</strong>
-                        </div>
-                        <div class="w-50 flex vertical-center horizontal-center">
-                            <h3>100</strh3>
-                        </div>
+                    <div class="w-50 flex vertical-center horizontal-center">
+                        <h3>006</h3>
                     </div>
-                    <div class="stat-info flex vertical-center horizontal-center">
-                        <div class="w-50 flex vertical-center horizontal-center">
-                            <strong>TYPE</strong>
-                        </div>
-                        <div class="w-50 flex vertical-center horizontal-center">
-                            <h3>FIRE</sth3>
-                        </div>
+                </article>
+                <article class="stat-info flex vertical-center horizontal-center">
+                    <div class="w-50 flex vertical-center horizontal-center">
+                        <strong>LEVEL</strong>
                     </div>
-                    <div class="stat-info flex vertical-center horizontal-center">
-                        <div class="w-50 flex vertical-center horizontal-center">
-                            <strong>HABILITY</strong>
-                        </div>
-                        <div class="w-50 flex vertical-center horizontal-center">
-                            <h3>FLAMES</h3>
-                        </div>
+                    <div class="w-50 flex vertical-center horizontal-center">
+                        <h3>100</strh3>
                     </div>
-                    <div class="stat-info flex vertical-center horizontal-center">
-                        <div class="w-50 flex vertical-center horizontal-center">
-                            <strong>HEIGHT</strong>
-                        </div>
-                        <div class="w-50 flex vertical-center horizontal-center">
-                            <h3>1.7M</sth3>
-                        </div>
+                </article>
+                <article class="stat-info flex vertical-center horizontal-center">
+                    <div class="w-50 flex vertical-center horizontal-center">
+                        <strong>TYPE</strong>
                     </div>
-                    <div class="stat-info flex vertical-center horizontal-center">
-                        <div class="w-50 flex vertical-center horizontal-center">
-                            <strong>WEIGHT</strong>
-                        </div>
-                        <div class="w-50 flex vertical-center horizontal-center">
-                            <h3>90.5KG</h3>
-                        </div>
+                    <div class="w-50 flex vertical-center horizontal-center">
+                        <h3>FIRE</sth3>
                     </div>
-                </section>
-            </div>
+                </article>
+                <article class="stat-info flex vertical-center horizontal-center">
+                    <div class="w-50 flex vertical-center horizontal-center">
+                        <strong>HABILITY</strong>
+                    </div>
+                    <div class="w-50 flex vertical-center horizontal-center">
+                        <h3>FLAMES</h3>
+                    </div>
+                </article>
+                <article class="stat-info flex vertical-center horizontal-center">
+                    <div class="w-50 flex vertical-center horizontal-center">
+                        <strong>HEIGHT</strong>
+                    </div>
+                    <div class="w-50 flex vertical-center horizontal-center">
+                        <h3>1.7M</sth3>
+                    </div>
+                </article>
+                <article class="stat-info flex vertical-center horizontal-center">
+                    <div class="w-50 flex vertical-center horizontal-center">
+                        <strong>WEIGHT</strong>
+                    </div>
+                    <div class="w-50 flex vertical-center horizontal-center">
+                        <h3>90.5KG</h3>
+                    </div>
+                </article>
+            </section>
         </main>
 
-        <footer class="bg-white border-top">
-            <div id="footer-wrapper" class="flex horizontal-center">
-                <section class="container grid w-75 h-75">
-                    <div class="cell flex horizontal-center vertical-center">
-                        <h2>
-                            Others
-                        </h2>
-                    </div>
-                    <div class="cell flex horizontal-center vertical-center"><button class="bg-flygon border border-black border-solid bg-white"></button></div>
-                    <div class="cell flex horizontal-center vertical-center"><button class="bg-butterfree border border-black border-solid bg-white"></button></div>
-                    <div class="cell flex horizontal-center vertical-center"><button class="bg-gallade border border-black border-solid bg-white"></button></div>
-                    <div class="cell flex horizontal-center vertical-center"><button class="bg-bisharp border border-black border-solid bg-white"></button></div>
-                </section>
-            </div>
+        <footer class="flex horizontal-center vertical-center bg-white border-top">
+            <section class="grid horizontal-center vertical-center max-w-50 h-100 vertical">
+                <div class="cell flex horizontal-center vertical-center">
+                    <h3>
+                        Others
+                    </h3>
+                </div>
+                <div class="cell flex horizontal-center vertical-center"><button class="bg-flygon border border-black border-solid bg-white"></button></div>
+                <div class="cell flex horizontal-center vertical-center"><button class="bg-butterfree border border-black border-solid bg-white"></button></div>
+                <div class="cell flex horizontal-center vertical-center"><button class="bg-gallade border border-black border-solid bg-white"></button></div>
+                <div class="cell flex horizontal-center vertical-center"><button class="bg-bisharp border border-black border-solid bg-white"></button></div>
+            </section>
         </footer>
 
     </div>
